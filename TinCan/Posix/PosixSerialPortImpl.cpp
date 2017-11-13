@@ -189,7 +189,7 @@ namespace tinCan
                 String base = path::fileName(iter->path());
                 for (size_t i = 0; i < prefixMatch.count(); ++i)
                 {
-                    if (base.sub(0, prefixMatch[i].length()) == prefixMatch[i])
+                    //if (base.sub(0, prefixMatch[i].length()) == prefixMatch[i])
                     {
                         ret.append(SerialPortInfo(iter->path(), toString((Int64)id)));
                     }
