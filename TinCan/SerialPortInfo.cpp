@@ -14,7 +14,8 @@ namespace tinCan
 
     String SerialPortInfo::name() const
     {
-        return path::fileName(m_path);
+        if(m_path.length())
+            return path::fileName(m_path);
     }
 
     const String & SerialPortInfo::path() const
